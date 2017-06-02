@@ -100,11 +100,8 @@ html, body {
 }
 }
 
-body { 
-	margin: 0; 
-} 
-
 div#slider { 
+	height: 40vh;
 	margin-top: -16px;
 	overflow: hidden; 
 }
@@ -117,18 +114,35 @@ div#slider figure img {
 }
 
 div#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; 
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slidy infinite; 
 }
 
 /*-----------------Grid-------------------*/
 
+#grid {
+	width: 100vw;
+}
 
+#grid #double img {
+	float: left;
+	margin: 0;
+	object-fit: cover;
+	width: 50vw;
+	height: 50vw;
+}
+#grid #triple img {
+	float: left;
+	margin: 0;
+	object-fit: cover;
+	width: 33.333vw;
+	height: 33.333vw;
+}
 
 /*----------------Back Button--------------*/
 .material-icons {
